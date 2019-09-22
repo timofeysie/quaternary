@@ -5,7 +5,29 @@ This is the god project for all the other projects contained in this repository,
 #
 ## Current work
 
-Use the [Socius]() project in the [Stumosa Pipe]() app consumed in the [Marvel Characters demo](https://stackblitz.com/edit/react-json-fetching-using-fetch-xhthfx).
+Use the [Socius](https://github.com/timofeysie/socius) project in the [Stumosa Pipe]() app consumed in the [Marvel Characters demo](https://stackblitz.com/edit/react-json-fetching-using-fetch-xhthfx).  Seemed like a good idea, but the web components project that aims to provide both round and square buttons over-complicates code that is not really what anyone wants.
+
+What can be usefull would be to combine some micro-interaction work with the kiosk work being done in Electron in the [Gosh project]().
+
+A desperate need also is to put the arbitrary subject backend service to use.  We have the backend side of that in the Calasasaya project.  This is an AWS deployed Serverless app.  However, now that the current role involves Azure, it makes sense to add the service to Strumosa-pipe.
+
+The [items controller](https://github.com/timofeysie/calasasaya/blob/master/controllers/items.controller.js) is the place to start.  It uses the following Curator function:
+```
+curator.createWikiDataCategoryUrl(lang, cat, wdt, wd);
+```
+
+The new feature then was easy to move to this project.  It can be tested live with this url:
+```
+http://strumosa.azurewebsites.net/items?lang=en&category=fallacies&wdt=P31&wd=Q186150
+```
+
+Next, consume the API in a front end project.  The question is, which one?
+* Loranthifolia Ionic project.
+* A new Ionic React implementation.
+* The Gosh Electron project.
+* Acapan React/Redux app.
+
+
 
 #
 # Live Demo Apps
@@ -50,13 +72,14 @@ a React 16 app that gets a list of items from WikiData and Wikipedia and provide
 # [Acapana](A React app to consume serverless functions on AWS)
  JavaScript Updated 3 days ago
 
-# Tiahuanaco
-Serverless Node backend app
- JavaScript MIT License Updated 4 days ago
+# [Tiahuanaco](https://github.com/timofeysie/tiahuanaco)
+This project is a Serverless backend to manage content uploaded to AWS. The front end is Acapana.
 
-## Calasasaya
-Serverless Node Express app.
- JavaScript Updated 11 days ago
+
+## [Calasasaya](https://github.com/timofeysie/calasasaya)
+This project is a Serverless deployment of a NodeJS and AWS Lambda application.
+add a category parameter to get an arbitrary list from WikiData.
+
 
 ## Curator
 Manages art collections
