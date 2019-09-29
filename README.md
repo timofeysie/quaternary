@@ -22,10 +22,61 @@ http://strumosa.azurewebsites.net/items?lang=en&category=fallacies&wdt=P31&wd=Q1
 ```
 
 Next, consume the API in a front end project.  The question is, which one?
-* Loranthifolia Ionic project.
+* Loranthifolia Ionic Angular project.
 * A new Ionic React implementation.
 * The Gosh Electron project.
-* Acapan React/Redux app.
+* Acapana React/Redux app.
+
+The choice made was the second.  A shiny new Ionic React app.  Ionic was actually my start with front end development.  After doing Java/Tomcat, then native Android work, Ionic provided me a bridge from mobile development to the front end.
+
+The only question now is what is the name of the shiny new project?  Tea? Gwion?  Xexenes? (a small mosquitos).  I like it!  Xexenes it is~
+
+#
+## To Do
+
+### Theming
+
+sliders and variables for things other than colors:
+https://googlechrome.github.io/samples/css-custom-properties/
+
+A theme service [along the lines of this](https://angularfirebase.com/lessons/css-variables-in-ionic-4/#Theme-Generator-Service) is an easy way to go.
+
+Next, create the service and install the Color lib for tinting and other theming utils.
+```
+ng g service core/services/theme
+npm i color
+npm install @types/color
+```
+
+
+The service works out of the box pretty quickly.  Loads with the correct theme when set in the constructor.
+Usage with specific:
+```
+.container > .box {
+    background-color: var(--ion-color-light-tint);
+}
+```
+
+A style guid markup would look something like this:
+```
+<button ion-button color="light">color-light</button>
+  <button ion-button class="light-rgb">light-rgb</button>
+  <button ion-button class="light-contrast">light-contrast</button>
+  <button ion-button class="contrast-rgb">light-contrast-rgb</button>
+  <button ion-button class="light-shade">light-shade</button>
+  <button ion-button class="light-tint">light-tint</button>   
+```
+
+Supported by some css variables:
+``` 
+    .light { color: var(--ion-color-light) }
+    .light-rgb { color: var(--ion-color-light-rbg) }
+    .light-contrast { color: var(--ion-color-light-contrast) }
+    .light-contrast-rgb { color: var(--ion-color-light-contrast-rgb) }
+    .light-shade { color: var(--ion-color-light-shade) }
+    .light-tint { color: var(--ion-color-light-tint) }
+```
+
 
 
 
@@ -61,6 +112,11 @@ Some job test I never took.  The notes say it needs to be *a responsive UI that 
 #
 # GitHub projects
 
+
+## [Xexenes](https://github.com/timofeysie?tab=repositories)
+An Ionic React app using WikiData as the source of truth.
+
+
 ## [Viracocha](https://github.com/timofeysie/viracocha)
 A list of Wikipedia items using React & Redux.
 
@@ -69,10 +125,10 @@ A list of Wikipedia items using React & Redux.
 a React 16 app that gets a list of items from WikiData and Wikipedia and provides a detail view of these items.  Work in progress includes using a component library built with the Stencil compiler.
 
 
-# [Acapana](A React app to consume serverless functions on AWS)
- JavaScript Updated 3 days ago
+## [Acapana](A React app to consume serverless functions on AWS)
+JavaScript Updated 3 days ago
 
-# [Tiahuanaco](https://github.com/timofeysie/tiahuanaco)
+## [Tiahuanaco](https://github.com/timofeysie/tiahuanaco)
 This project is a Serverless backend to manage content uploaded to AWS. The front end is Acapana.
 
 
