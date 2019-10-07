@@ -29,7 +29,15 @@ Next, consume the API in a front end project.  The question is, which one?
 
 The choice made was the second.  A shiny new Ionic React app.  Ionic was actually my start with front end development.  After doing Java/Tomcat, then native Android work, Ionic provided me a bridge from mobile development to the front end.
 
-The only question now is what is the name of the shiny new project?  Tea? Gwion?  Xexenes? (a small mosquitos).  I like it!  Xexenes it is~
+The only question now is what is the name of the shiny new project?  Tea? Gwion?  Xexenes? (a small mosquitos).  I like it!  [Xexenes](https://github.com/timofeysie/xexenes) it is~
+
+Then the need to create an example app to demonstrate theming, especially in an Ionic app.  The next name on the list was Emperor Don Carlos, and thus it was born at the beginning of October and has taken up all the dev work since then.  Xexenes would have been a better choice to receive the themeing, but since it is based on the bleeding edge Ionic/React, it might not also be the place to push the edge again with dynamic theming.
+
+[Emporer Don Carlos](https://github.com/timofeysie/emperor-don-carlos) has made some strides, but still needs some layout fixes, as well as adding the border option, and then saving a new theme in a file which can be set as the default of the app.  This work *could* be done as part of using the API, so that is the goal right now.
+
+So how far back did we have an Angular client using the API?  Conchifolia is the vanilla Angular app.  Loranthifolia is the Ionic version.  Tiwanaku is another Angular choice, which uses Redux via NgRx.  That last one seems the most attractive right now, as it ties in with expanding the Redux skills.  That project hasn't been touched since May.  Let's dust it off a bit.
+
+
 
 #
 ## To Do
@@ -109,6 +117,7 @@ Some job test I never took.  The notes say it needs to be *a responsive UI that 
 [Blank Angular](https://stackblitz.com/edit/angular-zbme4b).
 [Unfinished React](https://stackblitz.com/edit/react-json-fetching-using-fetch-tkaqx9).
 
+
 #
 # GitHub projects
 
@@ -122,11 +131,12 @@ A list of Wikipedia items using React & Redux.
 
 
 ## [Salicifolia](https://github.com/timofeysie/salicifolia)
-a React 16 app that gets a list of items from WikiData and Wikipedia and provides a detail view of these items.  Work in progress includes using a component library built with the Stencil compiler.
+A React 16 app that gets a list of items from WikiData and Wikipedia and provides a detail view of these items.  Work in progress includes using a component library built with the Stencil compiler.
 
 
-## [Acapana](A React app to consume serverless functions on AWS)
-JavaScript Updated 3 days ago
+## [Acapana](https://github.com/timofeysie/acapana)
+A React app to consume serverless functions on AWS.
+
 
 ## [Tiahuanaco](https://github.com/timofeysie/tiahuanaco)
 This project is a Serverless backend to manage content uploaded to AWS. The front end is Acapana.
@@ -137,9 +147,9 @@ This project is a Serverless deployment of a NodeJS and AWS Lambda application.
 add a category parameter to get an arbitrary list from WikiData.
 
 
-## Curator
-Manages art collections
- JavaScript Updated 18 days ago
+## [Curator](https://github.com/timofeysie/curator)
+A function library begun as a tool to manage art collections.  Now it supports the WikiData parsing apps.
+
 
 ## Salicifolia
 React app to parse WikiData
@@ -149,9 +159,11 @@ React app to parse WikiData
 A WikiData List app with Ionic 4
  TypeScript  4  2 GNU General Public License v3.0 Updated on 22 May
 
+
 ## Tiwanaku
 Managing application UI layout state with Angular with Redux
  TypeScript MIT License Updated on 22 May
+
 
 ## Quallasuyu
 A multi-framework mono-repo full-stack Java-script project
