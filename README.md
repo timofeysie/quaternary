@@ -37,6 +37,23 @@ Then the need to create an example app to demonstrate theming, especially in an 
 
 So how far back did we have an Angular client using the API?  Conchifolia is the vanilla Angular app.  Loranthifolia is the Ionic version.  Tiwanaku is another Angular choice, which uses Redux via NgRx.  That last one seems the most attractive right now, as it ties in with expanding the Redux skills.  That project hasn't been touched since May.  Let's dust it off a bit.
 
+Turns out there *was* some theming work done on this project a few months ago, so it's perfectly placed for what we want to be doing right now.  At that time when I was working in North Sydney, I had to lead a team creating a form which would be used by various other companies to create translation jobs.  They wanted a dynamically themed form that eventually was based on a configuration file and deployed individually.
+
+Tiwanaku sports a very nice Chacana theme, given it's name and proximity to Lake Titicaca, the center of the universe, it's a great project to be working on.  It has a favicon and an options page.  The main app has a list/detail view that uses state management.  Time to add a form on the options page to let the user change the category.  Then we need a new page to choose between these categories.  It's lots of work but the power of the Chacana will drive it forward!
+
+Create issue No.9 to create a form to input a new category.  Time to look at forms with Redux options.
+
+*ngrx-forms* brings the strengths of the redux state management model to the world of forms in applications that are using Angular and ngrx.
+
+This [Medium post] titled *Writing Redux-aware Angular forms with ngrx*
+1. Part 1(which is touching the setup and integration with FormControl).
+2. Part 2 (how to handle data in the forms that comes from server-side).
+3. Part 3 (using FormArrays).
+4. Part 4 (integrating server-side business validation errors in the form)
+5. Something else.
+
+That's a lot to be getting into.  I hope this is worth it.
+
 
 
 #
