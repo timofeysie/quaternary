@@ -1,11 +1,26 @@
 # quaternary
 
-This is the god project for all the other projects contained in this repository, as well as live samples for some of them.
+This is a documentation project for all the other projects contained in the timofeysie GitHub, as well as listing live samples for some of them.
 
-#
+The documentation here is a work in progress and far from complete.
+
 ## Current work
 
-Use the [Socius](https://github.com/timofeysie/socius) project in the [Stumosa Pipe]() app consumed in the [Marvel Characters demo](https://stackblitz.com/edit/react-json-fetching-using-fetch-xhthfx).  Seemed like a good idea, but the web components project that aims to provide both round and square buttons over-complicates code that is not really what anyone wants.
+Since the last commit in this overview project was 6 months ago, which was about last November 2019, there have been a few other projects created.  A big push again into React with a successful technical test.  Continued work in Angular especially using nx.
+
+Six month ago Ionic React had just been release and the Xexenes project has just started.
+
+Dynamic forms, TOH, Caldwell 77, Technical challenge, Khipu, are there any others?  It's hard these days with dependebot merging PRs due to security in dependant libs all by itself so that the last on GitHud is not in the order of last commit anymore.  Those entries look something like this [from Scocius](https://github.com/timofeysie/socius/pulls):
+
+Bump acorn from 5.7.3 to 5.7.4 dependencies #5 opened 14 hours ago by dependabot bot
+
+Bump handlebars from 4.0.12 to 4.5.3 dependencies #4 opened on Dec 28, 2019 by dependabot bot
+
+Bump mixin-deep from 1.3.1 to 1.3.2 dependencies #3 opened on Oct 22, 2019 by dependabot bot
+
+## Using Socius with Stumosa Pipe work
+
+During 2019 there was a focus to use the [Socius](https://github.com/timofeysie/socius) project in the [Stumosa Pipe]() app consumed in the [Marvel Characters demo](https://stackblitz.com/edit/react-json-fetching-using-fetch-xhthfx).  Seemed like a good idea, but the web components project that aims to provide both round and square buttons over-complicates code that is not really what anyone wants.
 
 What can be usefull would be to combine some micro-interaction work with the kiosk work being done in Electron in the [Gosh project]().
 
@@ -46,7 +61,8 @@ Create issue No.9 to create a form to input a new category.  Time to look at for
 *ngrx-forms* brings the strengths of the redux state management model to the world of forms in applications that are using Angular and ngrx.
 
 This [Medium post] titled *Writing Redux-aware Angular forms with ngrx*
-1. Part 1(which is touching the setup and integration with FormControl).
+
+1. Part 1 (which is touching the setup and integration with FormControl).
 2. Part 2 (how to handle data in the forms that comes from server-side).
 3. Part 3 (using FormArrays).
 4. Part 4 (integrating server-side business validation errors in the form)
@@ -54,9 +70,6 @@ This [Medium post] titled *Writing Redux-aware Angular forms with ngrx*
 
 That's a lot to be getting into.  I hope this is worth it.
 
-
-
-#
 ## To Do
 
 ### Theming
@@ -138,6 +151,8 @@ Some job test I never took.  The notes say it needs to be *a responsive UI that 
 #
 # GitHub projects
 
+
+## [](#)
 
 ## [Xexenes](https://github.com/timofeysie?tab=repositories)
 An Ionic React app using WikiData as the source of truth.
