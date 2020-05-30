@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="crayon.css" />
+  </head>
+
+  <body>
+    <form>
+      <p>
+        <label for="togglefill">Toggle the circle's fill:</label>
+        <input type="checkbox" name="togglefill" id="togglefill" checked />
+      </p>
+    </form>
+
+    <div class="wrapper">
+      <svg
+        width="350"
+        height="350"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <title>circle within a link</title>
+        <!-- Added cursor="pointer" to force a cursor in Chrome -->
+        <circle
+          stroke="#88CDD5"
+          fill="#D79CFD"
+          stroke-width="30"
+          cx="160"
+          cy="160"
+          r="140"
+          cursor="pointer"
+        ></circle>
+      </svg>
+
+      <div class="display-panel">
+        <button type="button">Reset the ouput</button>
+        <pre id="output"></pre>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="description">
+        Here we have a circle with a fill and a stroke applied. It’s both
+        painted and visible. The entire circle can receive pointer events, but
+        the area outside of the circle cannot.
+      </p>
+      <div class="entry" id="crayon"><div></div></div>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>
