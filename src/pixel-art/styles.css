@@ -1,0 +1,96 @@
+/*  Inspired by a talk at SydCSS by Tia Freeman https://codepen.io/tiafreeman/ */
+:root {
+  --test: red;
+
+  --top-left: #5e4c5a;
+  --top-right: #5f50a3;
+  --mid-left: #55917f;
+  --mid-right: #6bab90;
+  --bottom-left: #e1f0c4;
+  --bottom-right: #ffe2d1;
+}
+body {
+  background-color: #000;
+  padding: 25%;
+}
+#test {
+  border-radius: 50%;
+  background: var(--top-left);
+  margin-top: -10px;
+  margin-left: -10px;
+  height: 25px;
+  width: 25px;
+  box-shadow: 25px 25px 5px var(--test), 25px 51px 5px var(--top-left),
+    -1px 51px 5px var(--top-left), 51px 51px 5px var(--top-left),
+    77px 51px 5px var(--top-left);
+}
+
+#image-top-left {
+  border-radius: 50%;
+  background: var(--top-left);
+  margin-left: 100px;
+  height: 25px;
+  width: 25px;
+  box-shadow: 25px 25px 5px var(--top-left), 25px 51px 5px var(--top-left),
+    -1px 51px 5px var(--top-left), 51px 51px 5px var(--top-left),
+    77px 51px 5px var(--top-left);
+}
+#image-top-right {
+  border-radius: 50%;
+  margin-top: 26px;
+  margin-left: 203px;
+  background: var(--top-right);
+  height: 25px;
+  width: 25px;
+  box-shadow: 26px 0px var(--top-right), 52px 0px var(--top-right),
+    26px -26px var(--top-right), 52px -52px var(--top-right);
+}
+
+#image-mid-left {
+  margin-top: 1px;
+  margin-left: 99px;
+  height: 25px;
+  width: 25px;
+  background: var(--mid-left);
+  box-shadow: -26px 0px var(--mid-left), 26px 0px var(--mid-left),
+    78px 0px var(--mid-left), -52px 26px var(--mid-left),
+    -26px 26px var(--mid-left), 0px 26px var(--mid-left),
+    26px 26px var(--mid-left), -52px 52px var(--mid-left),
+    -52px 78px var(--mid-left);
+}
+
+#image-mid-right {
+  margin-top: -25px;
+  margin-left: 255px;
+  height: 25px;
+  width: 25px;
+  background: var(--mid-right);
+  box-shadow: 26px 0px var(--mid-right), -26px 0px var(--mid-right),
+    -78px 0px var(--mid-right), 52px 26px var(--mid-right),
+    26px 26px var(--mid-right), 0px 26px var(--mid-right),
+    -26px 26px var(--mid-right), 52px 52px var(--mid-right),
+    52px 78px var(--mid-right);
+}
+
+#image-bottom-left {
+  margin-top: 27px;
+  margin-left: 99px;
+  height: 25px;
+  width: 25px;
+  background: var(--bottom-left);
+  box-shadow: 26px 0 var(--bottom-left), 0px 26px var(--bottom-left),
+    26px 52px var(--bottom-left), 52px 52px var(--bottom-left),
+    52px 0 var(--bottom-left), 52px -26px var(--bottom-left);
+}
+
+#image-bottom-right {
+  margin-top: -25px;
+  margin-left: 255px;
+  height: 25px;
+  width: 25px;
+  background: var(--bottom-right);
+  box-shadow: -26px 0 var(--bottom-right), 0px 26px var(--bottom-right),
+    -26px 52px var(--bottom-right), -52px 52px var(--bottom-right),
+    -52px 0 var(--bottom-right), -52px -26px var(--bottom-right),
+    -78px 0px var(--bottom-right), -78px -26px var(--bottom-right);
+}

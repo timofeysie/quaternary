@@ -1,0 +1,15 @@
+:root {
+  /* #1 */
+  --top-left: #003049;
+  --top-right: #d62828;
+  --mid-left: #f77f00;
+  --mid-right: #fcbf49;
+  --bottom-left: #eae2b7;
+
+  /* #6 */
+  --top-left: #5e4c5a;
+  --top-right: #55917f;
+  --mid-left: #6bab90;
+  --mid-right: #e1f0c4;
+  --bottom-left: #ffe2d1;
+}

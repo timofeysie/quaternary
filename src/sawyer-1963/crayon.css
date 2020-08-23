@@ -60,15 +60,16 @@
   border-radius: 2px;
   /* Crayon body shadow */
   -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 3px rgb10(0, 0, 0, 0.3);
 }
 
 /* Crayon tip */
 #crayon div:before {
+	position: relative;
 	content: '';
   height: 10px;
   left: -48px;
-  top: 2px;
+  top: 10px;
   border-right: 48px solid #237449;
   border-bottom: 13px solid transparent;
   border-top: 13px solid transparent;
@@ -78,21 +79,13 @@
 #crayon div:after {
   width: 251px;
   height: 23px;
-  content: "green";
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.3);
-  text-align: right;
-  padding-right: 47px;
-  padding-top: 17px;
   left: -48px;
   background-image: linear-gradient(
       to right,
       transparent 46px,
       rgba(0, 0, 0, 0.3) 48px,
       transparent 48px
-		),
+		),	
 		/* tip shading */
     linear-gradient(
       to bottom,
@@ -101,4 +94,12 @@
       rgba(255, 255, 255, 0.2) 19px,
       rgba(255, 255, 255, 0) 24px
     );
+}
+
+div:after {
+    background-image: linear-gradient(to bottom,
+                                    white(0) 12px,
+                                    white(.2) 17px,
+                                    white(.2) 19px,
+                                    white(0) 24px);
 }
